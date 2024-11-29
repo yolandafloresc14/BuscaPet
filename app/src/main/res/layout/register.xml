@@ -1,98 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp"
     android:background="#F5E4D2"
     android:gravity="center_horizontal">
 
-        <!-- Logo or Icon -->
+        <!-- Logo -->
         <ImageView
             android:id="@+id/logoIcon"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:src="@drawable/logoicon"
             android:contentDescription="App Logo"
-            android:marginBottom="16dp"/>
+            android:layout_marginBottom="16dp" />
 
         <!-- Title -->
         <TextView
             android:id="@+id/titleText"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Create your account"
             android:textSize="20sp"
             android:textStyle="bold"
             android:gravity="center"
             android:textColor="#8B5A2B"
-            android:marginBottom="20dp"/>
+            android:layout_marginBottom="24dp" />
 
         <!-- Username Field -->
-        <EditText
-            android:id="@+id/usernameField"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
-            android:drawableStart="@drawable/ic_user"
-            android:drawablePadding="8dp"
+            android:orientation="horizontal"
             android:background="@drawable/edit_text_background"
-            android:padding="0dp"
-            android:textColorHint="#A1887F"
-            android:marginBottom="8dp"
-            />
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_user"
+                    android:contentDescription="User Icon"
+                    android:layout_marginEnd="12dp" />
+
+                <EditText
+                    android:id="@+id/usernameField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="your username"
+                    android:background="@null"
+                    android:textColorHint="#A1887F"
+                    android:textSize="14sp" />
+        </LinearLayout>
 
         <!-- Email Field -->
-        <EditText
-            android:id="@+id/emailField"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:background="@drawable/edit_text_background"
-            android:drawableStart="@drawable/ic_email"
-            android:drawablePadding="8dp"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:marginBottom="12dp"
             android:padding="12dp"
-            android:textColorHint="#A1887F" />
+            android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_email"
+                    android:contentDescription="Email Icon"
+                    android:layout_marginEnd="12dp" />
+
+                <EditText
+                    android:id="@+id/emailField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="yourname@mail.com"
+                    android:background="@null"
+                    android:textColorHint="#A1887F"
+                    android:textSize="14sp"
+                    android:inputType="textEmailAddress" />
+        </LinearLayout>
 
         <!-- Password Field -->
-        <EditText
-            android:id="@+id/passwordField"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:drawableStart="@drawable/ic_password"
-            android:drawablePadding="8dp"
+            android:orientation="horizontal"
             android:background="@drawable/edit_text_background"
             android:padding="12dp"
-            android:textColorHint="#A1887F"
-            android:marginBottom="12dp"/>
+            android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_password"
+                    android:contentDescription="Password Icon"
+                    android:layout_marginEnd="12dp" />
+
+                <EditText
+                    android:id="@+id/passwordField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="your password"
+                    android:background="@null"
+                    android:textColorHint="#A1887F"
+                    android:textSize="14sp"
+                    android:inputType="textPassword" />
+        </LinearLayout>
 
         <!-- Confirm Password Field -->
-        <EditText
-            android:id="@+id/confirmPasswordField"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirm Password"
-            android:inputType="textPassword"
-            android:drawableStart="@drawable/ic_password"
-            android:drawablePadding="8dp"
+            android:orientation="horizontal"
             android:background="@drawable/edit_text_background"
             android:padding="12dp"
-            android:textColorHint="#A1887F"
-            android:marginBottom="12dp"/>
+            android:layout_marginBottom="16dp">
 
-        <!-- Checkbox -->
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_password"
+                    android:contentDescription="Confirm Password Icon"
+                    android:layout_marginEnd="12dp" />
+
+                <EditText
+                    android:id="@+id/confirmPasswordField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="confirm your password"
+                    android:background="@null"
+                    android:textColorHint="#A1887F"
+                    android:textSize="14sp"
+                    android:inputType="textPassword" />
+        </LinearLayout>
+
+        <!-- Privacy Policy -->
         <CheckBox
             android:id="@+id/privacyPolicyCheckbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="I accept Privacy Policy y Terms of Use"
+            android:text="I accept Privacy Policy & Terms of Use"
             android:textColor="#8B5A2B"
-            android:marginBottom="24dp"/>
+            android:layout_marginBottom="24dp" />
 
         <!-- Sign Up Button -->
         <Button
@@ -102,9 +158,9 @@
             android:text="Sign Up"
             android:backgroundTint="#8B5A2B"
             android:textColor="#FFFFFF"
-            android:marginBottom="16dp"/>
+            android:layout_marginBottom="16dp" />
 
-        <!-- Sign Up Options -->
+        <!-- Divider -->
         <TextView
             android:id="@+id/orText"
             android:layout_width="match_parent"
@@ -112,28 +168,49 @@
             android:text="OR"
             android:gravity="center"
             android:textColor="#8B5A2B"
-            android:marginBottom="16dp"/>
+            android:layout_marginBottom="16dp" />
 
         <!-- Sign Up with Google -->
-        <Button
-            android:id="@+id/googleSignUpButton"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up with Google"
+            android:layout_gravity="center"
             android:background="@drawable/btn_google_background"
-            android:drawableStart="@drawable/ic_google"
-            android:drawablePadding="8dp"
-            android:marginBottom="12dp"/>
+            android:padding="12dp"> <!-- Centrar en el contenedor -->
+
+                <!-- Icono -->
+                <ImageView
+                    android:id="@+id/googleIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_google" />
+
+                <!-- Texto -->
+                <TextView
+                    android:id="@+id/googleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@id/googleIcon"
+                    android:text="Sign Up with Google"
+                    android:textColor="#8B5A2B"
+                    android:textSize="16sp" />
+        </RelativeLayout>
+
+
+
 
         <!-- Log In -->
         <TextView
             android:id="@+id/loginText"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Already have an account? Log In"
             android:gravity="center"
             android:textColor="#8B5A2B"
             android:textStyle="bold"
-            android:padding="16dp"/>
-
+            android:layout_marginTop="16dp" />
 </LinearLayout>
