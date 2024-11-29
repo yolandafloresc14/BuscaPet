@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color de fondo -->
+    <solid android:color="#FFFFFF" /> <!-- Fondo blanco -->
+
+    <!-- Borde del botón -->
+    <stroke
+        android:width="2dp"
+        android:color="#4285F4" /> <!-- Azul Google -->
+
+    <!-- Esquinas redondeadas -->
+    <corners android:radius="12dp" />
+</shape>
