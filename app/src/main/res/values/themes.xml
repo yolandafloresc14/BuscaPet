@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.BuscaPet" parent="android:Theme.Material.Light.NoActionBar" />
-
-    <!-- Tema para botones-->
-    <style name="CustomButtonStyle" parent="Widget.Material3.Button">
-        <item name="android:backgroundTint">@color/primario</item> <!-- Fondo del botón -->
-        <item name="android:textColor">@color/white</item> <!-- Texto del botón -->
+    <style name="Theme.BuscaPet" parent="android:Theme.Material.Light.NoActionBar" >
 
     </style>
+
 </resources>
