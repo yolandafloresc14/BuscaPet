@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="#F5E4D2">
+    android:background="#F5E4D2"
+    android:gravity="center_horizontal">
 
         <!-- Logo or Icon -->
         <ImageView
             android:id="@+id/logoIcon"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:layout_gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/logoicon"
             android:contentDescription="App Logo"
-            android:marginBottom="24dp"/>
+            android:marginBottom="16dp"/>
 
         <!-- Title -->
         <TextView
@@ -26,7 +27,7 @@
             android:textStyle="bold"
             android:gravity="center"
             android:textColor="#8B5A2B"
-            android:marginBottom="16dp"/>
+            android:marginBottom="20dp"/>
 
         <!-- Username Field -->
         <EditText
@@ -37,23 +38,24 @@
             android:drawableStart="@drawable/ic_user"
             android:drawablePadding="8dp"
             android:background="@drawable/edit_text_background"
-            android:padding="12dp"
+            android:padding="0dp"
             android:textColorHint="#A1887F"
-            android:marginBottom="12dp"/>
+            android:marginBottom="8dp"
+            />
 
         <!-- Email Field -->
         <EditText
             android:id="@+id/emailField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_background"
             android:drawableStart="@drawable/ic_email"
             android:drawablePadding="8dp"
-            android:background="@drawable/edit_text_background"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:marginBottom="12dp"
             android:padding="12dp"
-            android:textColorHint="#A1887F"
-            android:marginBottom="12dp"/>
+            android:textColorHint="#A1887F" />
 
         <!-- Password Field -->
         <EditText
